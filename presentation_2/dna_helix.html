@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Consolas, 'Ubuntu Mono';
+        }
+
+        body {
+            background-color: black;
+            color: green;
+        }
+
+        button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        button:active {
+            background-color: white;
+            color: black;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        b {
+            color: white;
+        }
+
+        .bg-red {
+            background-color: red;
+        }
+
+        .bg-green {
+            background-color: green;
+        }
+    </style>
+    <script src="./helix-observer.js" defer></script>
+    <title>DNA Helix Difference</title>
+</head>
+<body>
+    DNA Helix 1: <input type="text" id="helix-1">
+    <br><br>
+    DNA Helix 2: <input type="text" id="helix-2">
+    <br><br>
+    <button>Calculate Hamming Difference</button>
+    <br><br>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="count"></p>
+</body>
+</html>
